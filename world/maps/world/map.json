@@ -1,0 +1,7 @@
+{
+  "title": "Карта мира",
+  "source": "source.png",
+  "size": [1461, 1077],
+  "background": "#0b2545",
+  "clipAreasToLand": true
+}

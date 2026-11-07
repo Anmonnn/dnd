@@ -1,0 +1,625 @@
+/* Карта: контейнер, оформление Leaflet, маркеры, подписи, уровни детализации. */
+
+.map-root {
+  position: absolute;
+  inset: 0;
+}
+
+.map-container {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+}
+
+.map-empty {
+  display: grid;
+  place-items: center;
+  color: var(--text-dim);
+}
+
+.map-notice {
+  position: absolute;
+  top: calc(var(--topbar-h) + 14px);
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-50%);
+  padding: 9px 16px;
+  border: 1px solid rgba(232, 169, 74, 0.5);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  color: var(--warn);
+  font-size: 13px;
+  box-shadow: var(--shadow);
+}
+
+.map-notice code {
+  color: var(--text);
+}
+
+/* Нет арта — показываем сетку, чтобы было видно пространство координат. */
+.map-container.no-art {
+  background-image:
+    linear-gradient(rgba(227, 181, 90, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 181, 90, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ─── Leaflet ──────────────────────────────────────────────────────────────── */
+
+.leaflet-container {
+  font-family: var(--font-ui);
+  outline: none;
+}
+
+.leaflet-container .leaflet-control-zoom {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.leaflet-container .leaflet-control-zoom a {
+  width: 36px;
+  height: 36px;
+  line-height: 34px;
+  background: var(--bg-panel);
+  color: var(--text);
+  border-color: var(--border);
+  font-weight: 400;
+}
+
+.leaflet-container .leaflet-control-zoom a:hover {
+  background: var(--bg-elev);
+  color: var(--accent-strong);
+}
+
+.leaflet-container .leaflet-control-zoom a.leaflet-disabled {
+  background: var(--bg-panel);
+  color: var(--text-faint);
+}
+
+/* Кнопка «вся карта» — в одном стиле с зумом. */
+.leaflet-container .map-home {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.leaflet-container .map-home a {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: var(--bg-panel);
+  color: var(--text);
+}
+
+.leaflet-container .map-home a:hover {
+  background: var(--bg-elev);
+  color: var(--accent-strong);
+}
+
+.map-home svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Детальные врезки проявляются плавно; прозрачность задаёт MapController по зуму. */
+.map-inset {
+  transition: opacity 0.35s ease;
+}
+
+.leaflet-tooltip.inset-label {
+  padding: 2px 8px;
+  border: 1px dashed currentColor;
+  background: rgba(9, 14, 24, 0.8);
+  color: #7fd1c7;
+  font-size: 12px;
+  box-shadow: none;
+}
+
+.leaflet-tooltip.inset-label::before {
+  display: none;
+}
+
+.menu-check-dev span {
+  color: var(--dm);
+}
+
+/* Зум-контрол не прячется под панелью статьи. */
+.app.has-panel .leaflet-bottom.leaflet-right {
+  right: var(--panel-w);
+  transition: right 0.2s ease;
+}
+
+.map-tiles,
+.map-preview {
+  image-rendering: auto;
+}
+
+.leaflet-interactive:focus {
+  outline: none;
+}
+
+/* ─── маркеры ──────────────────────────────────────────────────────────────── */
+
+.mk {
+  --s: 18px;
+  --ring: var(--accent);
+}
+
+.mk-capital {
+  --s: 26px;
+  --ring: #f5cd78;
+}
+.mk-city {
+  --s: 22px;
+}
+.mk-town {
+  --s: 18px;
+  --ring: #e9cf94;
+}
+.mk-village {
+  --s: 10px;
+  --ring: #efe2bf;
+}
+.mk-fortress {
+  --s: 21px;
+  --ring: #c9d3e0;
+}
+.mk-temple {
+  --s: 21px;
+  --ring: #f3ead0;
+}
+.mk-ruin {
+  --s: 19px;
+  --ring: #bdb4a2;
+}
+.mk-dungeon {
+  --s: 21px;
+  --ring: #ef7a6f;
+}
+.mk-landmark {
+  --s: 25px;
+  --ring: #9cc0ff;
+}
+.mk-poi {
+  --s: 21px;
+  --ring: #86d6cb;
+}
+.mk-character,
+.mk-people,
+.mk-faction,
+.mk-note {
+  --ring: #d9c7a0;
+}
+
+.mk-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--s);
+  height: var(--s);
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid var(--ring);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #2a364d, #0c1320 72%);
+  color: var(--ring);
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mk-svg {
+  width: 62%;
+  height: 62%;
+}
+
+.mk-emoji {
+  font-size: calc(var(--s) * 0.58);
+  line-height: 1;
+}
+
+.mk-village .mk-badge {
+  background: var(--ring);
+  border-color: #2b2416;
+}
+
+.mk-village .mk-svg {
+  display: none;
+}
+
+.mk-capital .mk-badge {
+  box-shadow:
+    0 0 10px rgba(245, 205, 120, 0.55),
+    0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.mk-landmark .mk-badge {
+  box-shadow:
+    0 0 12px 2px rgba(156, 192, 255, 0.6),
+    0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.mk-plain .mk-badge {
+  cursor: default;
+}
+
+/* Значок в цвете места (фракция, культура): обводка, глиф, отсвет фона и ореол. */
+.mk-badge.mk-themed {
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--ring) 42%, #1c2436), #0c1320 78%);
+  box-shadow:
+    0 0 7px color-mix(in srgb, var(--ring) 55%, transparent),
+    0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.mk-capital .mk-badge.mk-themed,
+.mk-landmark .mk-badge.mk-themed {
+  box-shadow:
+    0 0 12px 2px color-mix(in srgb, var(--ring) 65%, transparent),
+    0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.mk-village .mk-badge.mk-themed {
+  background: var(--ring);
+}
+
+.mk-label {
+  position: absolute;
+  left: calc(var(--s) / 2 + 5px);
+  top: 0;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font: 600 12.5px/1 var(--font-ui);
+  color: #fff8e8;
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.95),
+    0 0 5px rgba(0, 0, 0, 0.8),
+    0 1px 1px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.mk-capital .mk-label {
+  font: 700 17px/1 var(--font-display);
+  letter-spacing: 0.03em;
+  color: #fff3d6;
+}
+
+.mk-city .mk-label {
+  font: 700 15.5px/1 var(--font-display);
+}
+
+.mk-landmark .mk-label {
+  font: italic 600 15.5px/1 var(--font-display);
+  color: #e3edff;
+}
+
+.mk-village .mk-label {
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+/* Надписи без значка (например, «Дальше живут драконы»): курсив по центру точки. */
+.mk-text .mk-label {
+  left: 0;
+  transform: translate(-50%, -50%);
+  font: italic 600 calc(17px * var(--label-scale, 1)) / 1 var(--font-display);
+  letter-spacing: 0.12em;
+  color: #f4ead2;
+}
+
+.mk-plain .mk-label {
+  cursor: default;
+}
+
+/* Водоёмы: без значка, подпись курсивом по центру точки. */
+.mk-water .mk-label {
+  left: 0;
+  transform: translate(-50%, -50%);
+  font: italic 600 calc(16px * var(--label-scale, 1)) / 1 var(--font-display);
+  letter-spacing: 0.16em;
+  color: #d8ecff;
+  text-shadow:
+    0 0 3px rgba(3, 17, 40, 0.95),
+    0 0 9px rgba(3, 17, 40, 0.75);
+}
+
+.mk:hover .mk-badge,
+.mk.is-hover .mk-badge {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.mk.is-hover .mk-label,
+.mk:hover .mk-label {
+  color: var(--accent-strong);
+}
+
+.mk.is-selected .mk-badge {
+  border-color: #fff;
+  box-shadow:
+    0 0 0 3px var(--accent),
+    0 0 18px rgba(227, 181, 90, 0.85);
+}
+
+.mk.is-selected .mk-label {
+  color: var(--accent-strong);
+}
+
+.mk.is-pulse .mk-badge::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 2px solid var(--accent-strong);
+  border-radius: 50%;
+  animation: mk-pulse 1.2s ease-out 2;
+  pointer-events: none;
+}
+
+@keyframes mk-pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* ─── кружки сущностей у мест (персонажи) ──────────────────────────────────── */
+
+/* Ряд кружков одного места; ширину каждого задаёт его имя — имена не налезают друг на друга. */
+.pin-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* Над значком города — нижний край ряда на 16 px выше точки. */
+.pin-group.pin-above {
+  transform: translate(-50%, calc(-100% - 16px));
+}
+
+/* Под подписью области: подпись растёт с зумом, отступ тоже. */
+.pin-group.pin-below {
+  transform: translate(-50%, calc(var(--label-scale, 1) * 12px + 6px));
+}
+
+.pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.pin:focus-visible .pin-avatar {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+
+.pin-avatar {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: #0c1320;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pin-img,
+.pin-initials {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pin-initials {
+  color: #fff3d6;
+  font: 700 13px/1 var(--font-ui);
+  letter-spacing: 0.02em;
+}
+
+.pin-name {
+  max-width: 96px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff8e8;
+  font: 600 11.5px/1.2 var(--font-ui);
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.95),
+    0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.pin-more .pin-avatar {
+  border-style: dashed;
+}
+
+/* Группа игроков: крупнее, двойное кольцо в цвете группы, флажок, ряд участников. */
+.pin-party {
+  --party: #f5cd78;
+}
+
+.pin-party .pin-avatar {
+  width: 44px;
+  height: 44px;
+  border: 3px double var(--party);
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--party) 60%, transparent),
+    0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pin-party .pin-avatar::before {
+  content: '⚑';
+  position: absolute;
+  top: -9px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--party);
+  color: #1a1408;
+  font: 700 11px/1 var(--font-ui);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.pin-party .pin-name {
+  max-width: 130px;
+  color: var(--party);
+  font-weight: 700;
+}
+
+.pin-members {
+  display: flex;
+  margin-top: 1px;
+}
+
+.pin-member {
+  width: 20px;
+  height: 20px;
+  margin-left: -5px;
+  border: 1.5px solid #0c1320;
+  border-radius: 50%;
+  background: #0c1320;
+  overflow: hidden;
+}
+
+.pin-member:first-child {
+  margin-left: 0;
+}
+
+.pin-member .pin-initials {
+  font-size: 8px;
+}
+
+.pin-more .pin-initials {
+  background: rgba(20, 28, 44, 0.92);
+  font-size: 12px;
+}
+
+.pin:hover .pin-avatar,
+.pin.is-hover .pin-avatar {
+  transform: scale(1.12);
+}
+
+.pin.is-selected .pin-avatar {
+  border-color: #fff;
+  box-shadow:
+    0 0 0 3px var(--accent),
+    0 0 16px rgba(227, 181, 90, 0.85);
+}
+
+.pin.is-selected .pin-name {
+  color: var(--accent-strong);
+}
+
+.pin.is-pulse .pin-avatar::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 2px solid var(--accent-strong);
+  border-radius: 50%;
+  animation: mk-pulse 1.2s ease-out 2;
+  pointer-events: none;
+}
+
+.map-container.labels-off .pin-name {
+  display: none;
+}
+
+/* ─── области и дороги ─────────────────────────────────────────────────────── */
+
+.area {
+  transition: fill-opacity 0.15s, stroke-width 0.15s;
+}
+
+.area-state {
+  filter: drop-shadow(0 0 1.5px rgba(0, 0, 0, 0.7));
+}
+
+.route {
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.9));
+}
+
+/* ─── подписи областей ─────────────────────────────────────────────────────── */
+
+.area-label span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+  font: 700 calc(18px * var(--label-scale, 1)) / 1 var(--font-display);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fbf3df;
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.95),
+    0 0 7px rgba(0, 0, 0, 0.75),
+    0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+.area-label-region span {
+  font-style: italic;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.1em;
+  font-size: calc(17px * var(--label-scale, 1));
+  color: #f1e8d0;
+  opacity: 0.92;
+}
+
+.area-label-district span {
+  font-size: calc(14px * var(--label-scale, 1));
+  letter-spacing: 0.14em;
+}
+
+/* ─── детализация по зуму и выключение подписей ────────────────────────────── */
+
+.map-container .d-1,
+.map-container .d-2 {
+  display: none;
+}
+
+.map-container.show-d1 .d-1,
+.map-container.show-d2 .d-2 {
+  display: block;
+}
+
+.map-container.labels-off .mk-label,
+.map-container.labels-off .area-label {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .leaflet-control-zoom {
+    display: none;
+  }
+
+  .mk-label {
+    font-size: 11.5px;
+  }
+}

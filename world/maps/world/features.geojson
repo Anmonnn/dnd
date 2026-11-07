@@ -1,0 +1,2057 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "f-dalniy-sever",
+      "properties": {
+        "entity": "dalniy-sever"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -15,
+              -15
+            ],
+            [
+              1480,
+              -15
+            ],
+            [
+              1480,
+              235
+            ],
+            [
+              -15,
+              235
+            ],
+            [
+              -15,
+              -15
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-zemli-drevnikh",
+      "properties": {
+        "entity": "zemli-drevnikh",
+        "labelAt": [
+          470,
+          1012
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -15,
+              960
+            ],
+            [
+              150,
+              965
+            ],
+            [
+              300,
+              945
+            ],
+            [
+              420,
+              860
+            ],
+            [
+              480,
+              800
+            ],
+            [
+              560,
+              780
+            ],
+            [
+              650,
+              790
+            ],
+            [
+              700,
+              815
+            ],
+            [
+              720,
+              821
+            ],
+            [
+              745,
+              826
+            ],
+            [
+              795,
+              834
+            ],
+            [
+              815,
+              836
+            ],
+            [
+              840,
+              838
+            ],
+            [
+              900,
+              842
+            ],
+            [
+              935,
+              848
+            ],
+            [
+              962,
+              867
+            ],
+            [
+              1000,
+              874
+            ],
+            [
+              1030,
+              878
+            ],
+            [
+              1060,
+              884
+            ],
+            [
+              1100,
+              888
+            ],
+            [
+              1150,
+              880
+            ],
+            [
+              1175,
+              905
+            ],
+            [
+              1250,
+              935
+            ],
+            [
+              1480,
+              945
+            ],
+            [
+              1480,
+              1095
+            ],
+            [
+              -15,
+              1095
+            ],
+            [
+              -15,
+              960
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-ostrova-varlordov",
+      "properties": {
+        "entity": "ostrova-varlordov",
+        "labelAt": [
+          1255,
+          500
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1045,
+              240
+            ],
+            [
+              1480,
+              240
+            ],
+            [
+              1480,
+              945
+            ],
+            [
+              1250,
+              935
+            ],
+            [
+              1175,
+              905
+            ],
+            [
+              1150,
+              880
+            ],
+            [
+              1165,
+              800
+            ],
+            [
+              1178,
+              730
+            ],
+            [
+              1195,
+              700
+            ],
+            [
+              1175,
+              640
+            ],
+            [
+              1160,
+              560
+            ],
+            [
+              1120,
+              500
+            ],
+            [
+              1080,
+              450
+            ],
+            [
+              1045,
+              415
+            ],
+            [
+              1045,
+              240
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-nekroticheskiy-ostrov",
+      "properties": {
+        "entity": "nekroticheskiy-ostrov",
+        "labelAt": [
+          150,
+          715
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -15,
+              630
+            ],
+            [
+              315,
+              630
+            ],
+            [
+              360,
+              660
+            ],
+            [
+              400,
+              700
+            ],
+            [
+              420,
+              830
+            ],
+            [
+              390,
+              880
+            ],
+            [
+              300,
+              935
+            ],
+            [
+              150,
+              955
+            ],
+            [
+              -15,
+              940
+            ],
+            [
+              -15,
+              630
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-severnye-zemli",
+      "properties": {
+        "entity": "severnye-zemli",
+        "labelAt": [
+          478,
+          398
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              262,
+              478
+            ],
+            [
+              318,
+              478
+            ],
+            [
+              380,
+              470
+            ],
+            [
+              450,
+              466
+            ],
+            [
+              520,
+              462
+            ],
+            [
+              580,
+              452
+            ],
+            [
+              628,
+              455
+            ],
+            [
+              665,
+              472
+            ],
+            [
+              720,
+              483
+            ],
+            [
+              790,
+              473
+            ],
+            [
+              812,
+              452
+            ],
+            [
+              860,
+              433
+            ],
+            [
+              930,
+              428
+            ],
+            [
+              990,
+              423
+            ],
+            [
+              1020,
+              418
+            ],
+            [
+              1045,
+              415
+            ],
+            [
+              1045,
+              240
+            ],
+            [
+              805,
+              240
+            ],
+            [
+              800,
+              355
+            ],
+            [
+              655,
+              355
+            ],
+            [
+              650,
+              240
+            ],
+            [
+              262,
+              240
+            ],
+            [
+              262,
+              478
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-ostatki-imperii",
+      "properties": {
+        "entity": "ostatki-imperii",
+        "labelAt": [
+          535,
+          603
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              262,
+              478
+            ],
+            [
+              318,
+              478
+            ],
+            [
+              380,
+              470
+            ],
+            [
+              450,
+              466
+            ],
+            [
+              520,
+              462
+            ],
+            [
+              580,
+              452
+            ],
+            [
+              628,
+              455
+            ],
+            [
+              665,
+              472
+            ],
+            [
+              720,
+              483
+            ],
+            [
+              790,
+              473
+            ],
+            [
+              798,
+              500
+            ],
+            [
+              765,
+              522
+            ],
+            [
+              728,
+              546
+            ],
+            [
+              706,
+              568
+            ],
+            [
+              695,
+              592
+            ],
+            [
+              735,
+              620
+            ],
+            [
+              775,
+              650
+            ],
+            [
+              805,
+              690
+            ],
+            [
+              830,
+              730
+            ],
+            [
+              845,
+              769
+            ],
+            [
+              810,
+              774
+            ],
+            [
+              760,
+              776
+            ],
+            [
+              700,
+              765
+            ],
+            [
+              660,
+              738
+            ],
+            [
+              620,
+              718
+            ],
+            [
+              580,
+              705
+            ],
+            [
+              545,
+              698
+            ],
+            [
+              520,
+              715
+            ],
+            [
+              430,
+              690
+            ],
+            [
+              360,
+              660
+            ],
+            [
+              300,
+              620
+            ],
+            [
+              262,
+              560
+            ],
+            [
+              262,
+              478
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-soyuz-volnykh-gorodov",
+      "properties": {
+        "entity": "soyuz-volnykh-gorodov",
+        "labelAt": [
+          1010,
+          712
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              790,
+              473
+            ],
+            [
+              812,
+              452
+            ],
+            [
+              860,
+              433
+            ],
+            [
+              930,
+              428
+            ],
+            [
+              990,
+              423
+            ],
+            [
+              1020,
+              418
+            ],
+            [
+              1045,
+              415
+            ],
+            [
+              1080,
+              450
+            ],
+            [
+              1120,
+              500
+            ],
+            [
+              1160,
+              560
+            ],
+            [
+              1175,
+              640
+            ],
+            [
+              1195,
+              700
+            ],
+            [
+              1178,
+              730
+            ],
+            [
+              1145,
+              730
+            ],
+            [
+              1080,
+              736
+            ],
+            [
+              1000,
+              742
+            ],
+            [
+              930,
+              750
+            ],
+            [
+              880,
+              762
+            ],
+            [
+              845,
+              769
+            ],
+            [
+              830,
+              730
+            ],
+            [
+              805,
+              690
+            ],
+            [
+              775,
+              650
+            ],
+            [
+              735,
+              620
+            ],
+            [
+              695,
+              592
+            ],
+            [
+              706,
+              568
+            ],
+            [
+              728,
+              546
+            ],
+            [
+              765,
+              522
+            ],
+            [
+              798,
+              500
+            ],
+            [
+              790,
+              473
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gosudarstvo-krepost",
+      "properties": {
+        "entity": "gosudarstvo-krepost",
+        "labelAt": [
+          1010,
+          800
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              545,
+              698
+            ],
+            [
+              580,
+              705
+            ],
+            [
+              620,
+              718
+            ],
+            [
+              660,
+              738
+            ],
+            [
+              700,
+              765
+            ],
+            [
+              760,
+              776
+            ],
+            [
+              810,
+              774
+            ],
+            [
+              845,
+              769
+            ],
+            [
+              880,
+              762
+            ],
+            [
+              930,
+              750
+            ],
+            [
+              1000,
+              742
+            ],
+            [
+              1080,
+              736
+            ],
+            [
+              1145,
+              730
+            ],
+            [
+              1178,
+              730
+            ],
+            [
+              1165,
+              800
+            ],
+            [
+              1150,
+              880
+            ],
+            [
+              1100,
+              888
+            ],
+            [
+              1060,
+              884
+            ],
+            [
+              1030,
+              878
+            ],
+            [
+              1000,
+              874
+            ],
+            [
+              962,
+              867
+            ],
+            [
+              935,
+              848
+            ],
+            [
+              900,
+              842
+            ],
+            [
+              870,
+              840
+            ],
+            [
+              840,
+              838
+            ],
+            [
+              815,
+              836
+            ],
+            [
+              795,
+              834
+            ],
+            [
+              770,
+              830
+            ],
+            [
+              745,
+              826
+            ],
+            [
+              720,
+              821
+            ],
+            [
+              700,
+              815
+            ],
+            [
+              650,
+              790
+            ],
+            [
+              590,
+              740
+            ],
+            [
+              545,
+              698
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gory-kontinenta-1",
+      "properties": {
+        "entity": "gory-kontinenta",
+        "labelAt": [
+          500,
+          520
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              410,
+              520
+            ],
+            [
+              440,
+              500
+            ],
+            [
+              480,
+              497
+            ],
+            [
+              515,
+              510
+            ],
+            [
+              535,
+              540
+            ],
+            [
+              532,
+              575
+            ],
+            [
+              505,
+              596
+            ],
+            [
+              460,
+              598
+            ],
+            [
+              425,
+              585
+            ],
+            [
+              405,
+              555
+            ],
+            [
+              410,
+              520
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gory-kontinenta-2",
+      "properties": {
+        "entity": "gory-kontinenta",
+        "labelAt": [
+          772,
+          598
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              652,
+              640
+            ],
+            [
+              668,
+              600
+            ],
+            [
+              700,
+              585
+            ],
+            [
+              745,
+              582
+            ],
+            [
+              790,
+              595
+            ],
+            [
+              825,
+              612
+            ],
+            [
+              848,
+              650
+            ],
+            [
+              850,
+              700
+            ],
+            [
+              840,
+              745
+            ],
+            [
+              815,
+              770
+            ],
+            [
+              770,
+              772
+            ],
+            [
+              735,
+              755
+            ],
+            [
+              712,
+              715
+            ],
+            [
+              680,
+              690
+            ],
+            [
+              655,
+              665
+            ],
+            [
+              652,
+              640
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gory-kontinenta-3",
+      "properties": {
+        "entity": "gory-kontinenta",
+        "labelAt": [
+          1005,
+          528
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              950,
+              560
+            ],
+            [
+              962,
+              520
+            ],
+            [
+              995,
+              500
+            ],
+            [
+              1040,
+              505
+            ],
+            [
+              1075,
+              530
+            ],
+            [
+              1090,
+              565
+            ],
+            [
+              1078,
+              600
+            ],
+            [
+              1045,
+              620
+            ],
+            [
+              1000,
+              622
+            ],
+            [
+              962,
+              600
+            ],
+            [
+              950,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-korsarskie-ostrova",
+      "properties": {
+        "entity": "korsarskie-ostrova",
+        "labelAt": [
+          118,
+          462
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15,
+              292
+            ],
+            [
+              222,
+              292
+            ],
+            [
+              222,
+              525
+            ],
+            [
+              15,
+              525
+            ],
+            [
+              15,
+              292
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-zemli-elfov",
+      "properties": {
+        "entity": "zemli-elfov",
+        "labelAt": [
+          690,
+          540
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              612,
+              454
+            ],
+            [
+              628,
+              455
+            ],
+            [
+              665,
+              472
+            ],
+            [
+              720,
+              483
+            ],
+            [
+              790,
+              473
+            ],
+            [
+              798,
+              500
+            ],
+            [
+              765,
+              522
+            ],
+            [
+              728,
+              546
+            ],
+            [
+              706,
+              568
+            ],
+            [
+              695,
+              592
+            ],
+            [
+              655,
+              598
+            ],
+            [
+              622,
+              575
+            ],
+            [
+              605,
+              530
+            ],
+            [
+              600,
+              490
+            ],
+            [
+              612,
+              454
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gory-kontinenta-4",
+      "properties": {
+        "entity": "gory-kontinenta",
+        "labelAt": [
+          412,
+          300
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              396,
+              262
+            ],
+            [
+              418,
+              272
+            ],
+            [
+              438,
+              300
+            ],
+            [
+              455,
+              325
+            ],
+            [
+              462,
+              352
+            ],
+            [
+              452,
+              380
+            ],
+            [
+              432,
+              400
+            ],
+            [
+              405,
+              406
+            ],
+            [
+              378,
+              396
+            ],
+            [
+              358,
+              372
+            ],
+            [
+              350,
+              342
+            ],
+            [
+              362,
+              310
+            ],
+            [
+              380,
+              285
+            ],
+            [
+              396,
+              262
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-chyornaya-gora",
+      "properties": {
+        "entity": "chyornaya-gora",
+        "labelAt": [
+          1362,
+          550
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1336,
+              510
+            ],
+            [
+              1366,
+              506
+            ],
+            [
+              1390,
+              520
+            ],
+            [
+              1404,
+              546
+            ],
+            [
+              1400,
+              576
+            ],
+            [
+              1386,
+              598
+            ],
+            [
+              1360,
+              604
+            ],
+            [
+              1338,
+              594
+            ],
+            [
+              1322,
+              572
+            ],
+            [
+              1320,
+              540
+            ],
+            [
+              1336,
+              510
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-lisya-gora",
+      "properties": {
+        "entity": "lisya-gora"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1390,
+              330
+            ],
+            [
+              1408,
+              336
+            ],
+            [
+              1428,
+              352
+            ],
+            [
+              1434,
+              372
+            ],
+            [
+              1418,
+              382
+            ],
+            [
+              1398,
+              378
+            ],
+            [
+              1382,
+              366
+            ],
+            [
+              1378,
+              346
+            ],
+            [
+              1390,
+              330
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-sumerechnye-gory",
+      "properties": {
+        "entity": "sumerechnye-gory",
+        "labelAt": [
+          276,
+          836
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              236,
+              760
+            ],
+            [
+              262,
+              756
+            ],
+            [
+              284,
+              770
+            ],
+            [
+              302,
+              798
+            ],
+            [
+              314,
+              826
+            ],
+            [
+              306,
+              852
+            ],
+            [
+              280,
+              856
+            ],
+            [
+              256,
+              846
+            ],
+            [
+              236,
+              830
+            ],
+            [
+              220,
+              806
+            ],
+            [
+              222,
+              780
+            ],
+            [
+              236,
+              760
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-beskonechnaya-burya",
+      "properties": {
+        "entity": "beskonechnaya-burya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          790,
+          990
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-dalshe-zhivut-drakony",
+      "properties": {
+        "kind": "region",
+        "name": "Дальше живут драконы"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          430,
+          58
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-zimograd",
+      "properties": {
+        "entity": "zimograd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          520,
+          440
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-praag",
+      "properties": {
+        "entity": "praag"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          812,
+          432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-sech",
+      "properties": {
+        "entity": "sech"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          650,
+          452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-karak-norn",
+      "properties": {
+        "entity": "karak-norn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          400,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-gornilo",
+      "properties": {
+        "entity": "gornilo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          728,
+          392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-siniy-stolp",
+      "properties": {
+        "entity": "siniy-stolp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          735,
+          285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-skagfjord",
+      "properties": {
+        "entity": "skagfjord"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-ulvik",
+      "properties": {
+        "entity": "ulvik",
+        "detail": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1060,
+          165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-kapishche-chetyryokh",
+      "properties": {
+        "entity": "kapishche-chetyryokh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          660,
+          150
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-altdorn",
+      "properties": {
+        "entity": "altdorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590,
+          640
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-volfenfels",
+      "properties": {
+        "entity": "volfenfels"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          470,
+          488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-kamen-stada",
+      "properties": {
+        "entity": "kamen-stada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          640
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-monlak",
+      "properties": {
+        "entity": "monlak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          965,
+          640
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-aureliya",
+      "properties": {
+        "entity": "aureliya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1125,
+          630
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-spada",
+      "properties": {
+        "entity": "spada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          860,
+          545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-bastion",
+      "properties": {
+        "entity": "bastion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          735,
+          790
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-drakonyi-vrata",
+      "properties": {
+        "entity": "drakonyi-vrata"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          768,
+          826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-yuzhnye-steny",
+      "properties": {
+        "entity": "yuzhnye-steny"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            698,
+            814
+          ],
+          [
+            720,
+            821
+          ],
+          [
+            745,
+            826
+          ],
+          [
+            770,
+            830
+          ],
+          [
+            795,
+            834
+          ],
+          [
+            815,
+            836
+          ],
+          [
+            846,
+            838
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-karak-azgar",
+      "properties": {
+        "entity": "karak-azgar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          768,
+          680
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-nag-karon",
+      "properties": {
+        "entity": "nag-karon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          478,
+          582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-karak-zorn",
+      "properties": {
+        "entity": "karak-zorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1040,
+          595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-nakhtburg",
+      "properties": {
+        "entity": "nakhtburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          250,
+          790
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-likhtenau",
+      "properties": {
+        "entity": "likhtenau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135,
+          745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-akasiro",
+      "properties": {
+        "entity": "akasiro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1235,
+          455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-kuroyama",
+      "properties": {
+        "entity": "kuroyama"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1340,
+          600
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-shiranami",
+      "properties": {
+        "entity": "shiranami"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1275,
+          725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-svyatilishche-kami",
+      "properties": {
+        "entity": "svyatilishche-kami"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1395,
+          385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-sartena",
+      "properties": {
+        "entity": "sartena"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115,
+          405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-nekropol-tsarey",
+      "properties": {
+        "entity": "nekropol-tsarey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          560,
+          990
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-alleya-sfinksov",
+      "properties": {
+        "entity": "alleya-sfinksov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          770,
+          880
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-posledniy-lager",
+      "properties": {
+        "entity": "posledniy-lager"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          960,
+          1000
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-vechnyy-dub",
+      "properties": {
+        "entity": "vechnyy-dub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          700,
+          500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-lotheris",
+      "properties": {
+        "entity": "lotheris"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          975,
+          470
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-barak-varn",
+      "properties": {
+        "entity": "barak-varn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1075,
+          548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-medovyy-kholm",
+      "properties": {
+        "entity": "medovyy-kholm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          880,
+          605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-terpenie",
+      "properties": {
+        "entity": "terpenie",
+        "detail": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          470,
+          930
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-upryamstvo",
+      "properties": {
+        "entity": "upryamstvo",
+        "detail": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1150,
+          1010
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-pepelnaya-sloboda",
+      "properties": {
+        "entity": "pepelnaya-sloboda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1000,
+          850
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-drakkenkholm",
+      "properties": {
+        "entity": "drakkenkholm",
+        "detail": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1230,
+          75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-kamedzima",
+      "properties": {
+        "entity": "kamedzima",
+        "detail": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1320,
+          280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "f-eyzenkhafen",
+      "properties": {
+        "entity": "eyzenkhafen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          306,
+          546
+        ]
+      }
+    }
+  ]
+}

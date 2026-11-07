@@ -1,0 +1,300 @@
+/* Dev-редактор. Тема — переменные из src/app/styles/theme.css. */
+
+.ed-toolbar {
+  position: absolute;
+  left: 12px;
+  top: 76px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  background: var(--bg-panel, #121a29);
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-radius: var(--radius, 10px);
+  box-shadow: var(--shadow, 0 8px 30px rgba(0, 0, 0, 0.45));
+}
+
+.ed-toolbar hr {
+  width: 100%;
+  margin: 2px 0;
+  border: 0;
+  border-top: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+}
+
+.ed-tool {
+  width: 38px;
+  height: 38px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--bg-elev, #1a2436);
+  color: var(--text, #e9e4d8);
+  font-size: 17px;
+}
+
+.ed-tool:hover:not(:disabled) {
+  border-color: var(--border-strong, rgba(227, 181, 90, 0.5));
+}
+
+.ed-tool.is-active {
+  background: var(--accent, #e3b55a);
+  color: #1a1408;
+}
+
+.ed-tool:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ed-save.is-dirty {
+  box-shadow: 0 0 0 2px var(--accent, #e3b55a);
+}
+
+.ed-status {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ed-coords,
+.ed-toggle {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-radius: 8px;
+  background: var(--bg-panel, #121a29);
+  color: var(--text-dim, #9aa3b5);
+  font: 12px ui-monospace, Consolas, monospace;
+}
+
+.ed-toggle {
+  font: 600 13px var(--font-ui, system-ui);
+  color: var(--accent, #e3b55a);
+}
+
+.ed-toggle.is-on {
+  background: var(--accent, #e3b55a);
+  color: #1a1408;
+}
+
+.ed-dirty {
+  margin-left: 6px;
+  color: var(--danger, #e0625a);
+}
+
+.ed-stale {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(232, 169, 74, 0.15);
+  color: var(--warn, #e8a94a);
+  font-size: 12px;
+}
+
+.ed-toasts {
+  position: absolute;
+  left: 12px;
+  bottom: 54px;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 380px;
+}
+
+.ed-toast {
+  padding: 8px 12px;
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-left: 3px solid var(--accent, #e3b55a);
+  border-radius: 8px;
+  background: var(--bg-panel, #121a29);
+  box-shadow: var(--shadow, 0 8px 30px rgba(0, 0, 0, 0.45));
+  font-size: 13px;
+}
+
+.ed-toast.is-error {
+  border-left-color: var(--danger, #e0625a);
+}
+
+.ed-dialog {
+  position: absolute;
+  left: 64px;
+  top: 76px;
+  z-index: 2000;
+  width: 340px;
+  max-height: calc(100% - 100px);
+  overflow-y: auto;
+  padding: 14px 16px 16px;
+  background: var(--bg-panel, #121a29);
+  border: 1px solid var(--border-strong, rgba(227, 181, 90, 0.5));
+  border-radius: var(--radius, 10px);
+  box-shadow: var(--shadow, 0 8px 30px rgba(0, 0, 0, 0.45));
+}
+
+.ed-dialog h3 {
+  margin: 0 0 10px;
+  font: 700 19px var(--font-display, serif);
+  color: var(--accent, #e3b55a);
+}
+
+.ed-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.ed-tabs button {
+  flex: 1;
+  padding: 6px 4px;
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-radius: 6px;
+  background: none;
+  font-size: 12px;
+  color: var(--text-dim, #9aa3b5);
+}
+
+.ed-tabs button.is-active {
+  border-color: var(--accent, #e3b55a);
+  color: var(--accent, #e3b55a);
+}
+
+.ed-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ed-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+  color: var(--text-dim, #9aa3b5);
+}
+
+.ed-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-radius: 6px;
+  background: var(--bg-elev, #1a2436);
+  color: var(--text, #e9e4d8);
+  font-size: 13px;
+}
+
+.ed-check {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px !important;
+}
+
+.ed-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.ed-linked {
+  font-size: 13px;
+}
+
+.ed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.ed-btn {
+  padding: 5px 10px;
+  border: 1px solid var(--border, rgba(227, 181, 90, 0.25));
+  border-radius: 6px;
+  background: var(--bg-elev, #1a2436);
+  color: var(--text, #e9e4d8);
+  font-size: 12.5px;
+}
+
+.ed-btn:disabled {
+  opacity: 0.5;
+}
+
+.ed-primary {
+  background: var(--accent, #e3b55a);
+  border-color: var(--accent, #e3b55a);
+  color: #1a1408;
+  font-weight: 600;
+}
+
+.ed-danger {
+  margin-left: auto;
+  color: var(--danger, #e0625a);
+}
+
+.ed-error {
+  color: var(--danger, #e0625a);
+  font-size: 12.5px;
+}
+
+.ed-picker ul {
+  max-height: 280px;
+  overflow-y: auto;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ed-picker li button {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  text-align: left;
+  font-size: 13px;
+}
+
+.ed-picker li button:hover {
+  background: var(--bg-hover, rgba(227, 181, 90, 0.09));
+}
+
+.ed-picker small {
+  color: var(--text-faint, #6f7889);
+}
+
+.ed-empty {
+  padding: 8px;
+  color: var(--text-faint, #6f7889);
+}
+
+.ed-dot span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+
+.leaflet-tooltip.ed-tooltip {
+  padding: 2px 6px;
+  border: 0;
+  background: rgba(9, 14, 24, 0.85);
+  color: #fff;
+  font-size: 11.5px;
+  box-shadow: none;
+}
+
+.leaflet-tooltip.ed-tooltip::before {
+  display: none;
+}
+
+.app.is-editing .leaflet-container {
+  cursor: crosshair;
+}

@@ -1,0 +1,47 @@
+# Публикация версии для игроков на GitHub Pages при пуше в main.
+# Включите: Settings → Pages → Source: GitHub Actions.
+# ВНИМАНИЕ: на бесплатном GitHub Pages работает только из публичного репозитория, а в world/lore лежат
+# секреты мастера (> [!dm], visibility: dm) — в публичном репозитории их прочтёт кто угодно.
+# Без этого риска: npm run deploy (Cloudflare Pages, заливается только dist/) — см. README.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      # maps → check → vite build: тайлы режутся из world/maps/*/source.*, секреты мастера вырезаются
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

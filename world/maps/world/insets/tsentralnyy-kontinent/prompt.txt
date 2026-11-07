@@ -1,0 +1,16 @@
+Образец: reference.png (вырезка карты мира). Готовый арт сохраните в эту папку как source.png
+(та же композиция и пропорции 1536×1024; можно крупнее, например после апскейла ×4).
+
+--- Промпт (RU) ---
+Перерисуй этот фрагмент фэнтези-карты в высоком разрешении с гораздо большей детализацией.
+Сохрани ТОЧНО: береговую линию, положение гор, лесов, рек, озёр и островов, общую композицию и палитру.
+Тот же рисованный стиль, строго вид сверху. Никаких надписей, значков, рамок, границ и сетки.
+Размер 1536×1024.
+
+--- Prompt (EN) ---
+Redraw this fragment of a fantasy map at high resolution with much finer detail.
+Keep EXACTLY the same coastline, positions of mountains, forests, rivers, lakes and islands, the composition and the palette.
+Same painted style, strictly top-down. No text, labels, icons, borders, frames or grid.
+Output size 1536x1024.
+
+Рамка врезки на карте (inset.json → bounds): [197.2, 217.1, 1061.7, 707.8]

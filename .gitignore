@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-dm/
+# Тайлы и превью генерируются из world/maps/*/source.* командой `npm run maps`
+public/generated/
+*.local
+.env.*.local
+.DS_Store
+Thumbs.db
+# Obsidian: личные настройки рабочего пространства
+world/.obsidian/workspace*.json
+world/.obsidian/cache
+.vite/
+coverage/
+# Отладочная картинка npm run maps:land -- <id> --debug
+world/maps/*/land-debug.png
